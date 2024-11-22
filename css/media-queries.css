@@ -1,0 +1,14 @@
+/* Media queries para dispositivos pequenos em modo retrato */
+@media (min-width: 320px) and (max-width: 1023px) and (orientation: portrait) {
+  
+}
+
+/* Media queries para dispositivos no modo paisagem */
+@media (orientation: landscape) {
+
+}
+
+/* Media queries para dispositivos maiores, como desktops */
+@media (min-width: 1024px) {
+
+}
