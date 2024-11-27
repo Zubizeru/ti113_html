@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+</head>
+<body>
+    <h1>Agendamento para banho e tosa</h1>
+    <h2>Faça o seu agendamento com pelo menos 48 horas de antecedência</h2>
+    <form action="" method="get">
+
+        <!-- Identificação do dono do animal -->
+        <fieldset>
+            <legend>
+                Identificação do dono do animal
+            </legend>
+            <br>
+            <!-- Nome -->
+            <label for="txt_nome">Nome:</label>
+            <input size="50px" placeholder="Digite o nome completo do dono do animal" required type="text"
+                name="txt_nome" id="txt_nome"><br><br>
+            <!-- Endereço -->
+            <label for="txt_endereco">Endereço:</label>
+            <input size="80px" placeholder="Digite o endereço" required type="text" name="txt_endereco"
+                id="txt_endereco"><br><br>
+            <!-- Cep -->
+            <label for="txt_cep">CEP:</label>
+            <input size="10px" placeholder="XXXXX-XXX" required type="text" name="txt_cep" id="txt_cep"><br><br>
+            <!-- Email -->
+            <label for="txt_email">Email:</label>
+            <input size="75px" placeholder="Digite o endereço de email" required type="email" name="txt_email"
+                id="txt_email"><br><br>
+            <!-- Tel/Cel -->
+            <label for="txt_telcel">Tel/Cel:</label>
+            <input size="12px" placeholder="99 99999-9999" required type="email" name="txt_telcel"
+                id="txt_telcel"><br><br>
+        </fieldset>
+
+        <!-- Animal -->
+        <fieldset>
+            <legend>
+                Animal
+            </legend>
+            <br>
+            <!-- Nome do animal -->
+            <label for="txt_nomeanimal">Nome:</label>
+            <input size="25px" placeholder="Digite o nome do animal" required type="text" name="txt_nomeanimal"
+                id="txt_nomeanimal"><br><br>
+            <!-- Porte do cão -->
+            <label for="rdb_pequeno">Porte do cão:</label>
+            <input required type="radio" name="rdb_porte" id="rdb_pequeno">
+            <label for="rdb_pequeno">pequeno</label>
+            <input required type="radio" name="rdb_porte" id="rdb_medio">
+            <label for="rdb_medio">médio</label>
+            <input required type="radio" name="rdb_porte" id="rdb_grande">
+            <label for="rdb_grande">grande</label><br><br>
+            <!-- Tipo de tosa -->
+             <label for="slt_tosa">Tipo de tosa:</label>
+            <select required name="slt_tosa" id="slt_tosa">
+                <option value="">Nenhuma</option>
+            </select><br><br>
+            <!-- Observações -->
+            <label for="txt_email">Observações:</label>
+            <textarea placeholder="Digite alguma informação sobre o " name="txt_observacao" id="txt_observacao" cols="20" rows="2"></textarea><br><br>
+        </fieldset>
+
+        <!-- Horário - (Não atendemos de domingo e segunda-feira) -->
+         <fieldset>
+            <legend>Horário - (Não atendemos de domingo e segunda-feira)</legend>
+            <br>
+            <!-- Indique os dias da semana de sua preferência -->
+            <label for="rdb_diadasemana">Indique os dias da semana de sua preferência:</label><br>
+            <input required type="checkbox" name="chk_diadasemana" id="chk_terca">
+            <label for="chk_terca">Terça-feira</label>
+            <input required type="checkbox" name="chk_diadasemana" id="chk_quarta">
+            <label for="chk_terca">Quarta-feira</label>
+            <input required type="checkbox" name="chk_diadasemana" id="chk_quinta">
+            <label for="chk_terca">Quinta-feira</label>
+            <input required type="checkbox" name="chk_diadasemana" id="chk_sexta">
+            <label for="chk_terca">Sexta-feira</label>
+            <input required type="checkbox" name="chk_diadasemana" id="chk_sabado">
+            <label for="chk_terca">Sábado</label><br><br>
+            <!-- Primeira opção de horário -->
+            <label for="txt_opcao1">Primeira opção de horário:</label>
+            <input required type="date" name="txt_opcao1" id="txt_opcao1"><br><br>
+            <!-- Segunda opção de horário -->
+            <label for="txt_opcao2">Segunda opção de horário:</label>
+            <input required type="date" name="txt_opcao2" id="txt_opcao2"><br><br>
+         </fieldset>
+         <button id="btn_enviar" name="btn_enviar" type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
