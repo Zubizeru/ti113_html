@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+</head>
+
+<body>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>
+                Dados Pessoais
+            </legend>
+            <!-- Nome -->
+            <label for="txt_nome">Nome:</label>
+            <input required type="text" name="txt_nome" id="txt_nome"><br>
+            <!-- Sobrenome -->
+            <label for="txt_sobrenome">Sobrenome:</label>
+            <input required type="text" name="txt_sobrenome" id="txt_sobrenome"><br>
+            <!-- Data de Nascimento -->
+            <label for="txt_nascimento">Data de nascimento:</label>
+            <input required type="date" name="txt_nascimento" id="txt_nascimento"><br>
+            <!-- Sexo -->
+            <label for="rdb_sexo">Sexo:</label><br>
+            <input required type="radio" name="rdb_sexo" id="rdb_sexo">
+            <label for="rdbMasculino">Masculino</label><br>
+            <input type="radio" name="rdb_sexo" id="rdb_sexo">
+            <label required for="rdbFeminino">Feminino</label><br>
+            <input type="radio" name="rdb_sexo" id="rdb_sexo">
+            <label required for="rdbFeminino">Outro</label><br>
+            <!-- CPF -->
+            <label for="txt_cpf">CPF:</label>
+            <input type="text" name="txt_cpf" id="txt_cpf"><br>
+            <!-- Email -->
+            <label for="txt_email">Email:</label>
+            <input type="email" name="txt_email" id="txt_email"><br>
+            <!-- DDD -->
+            <label for="txt_ddd">DDD:</label>
+            <input type="number" name="txt_ddd" id="txt_ddd"><br>
+            <!-- Telefone -->
+            <label for="txt_telefone">Telefone:</label>
+            <input type="tel" name="txt_telefone" id="txt_telefone"><br>
+            <!-- Conhecimento -->
+            <label for="txt_conhecimento">Conheço:</label><br>
+            <!-- HTML -->
+            <input type="checkbox" name="chk_html" id="chk_html">
+            <label for="chk_html">HTML</label><br>
+            <!-- CSS -->
+            <input type="checkbox" name="chk_css" id="chk_css">
+            <label for="chk_css">CSS</label><br>
+            <!-- JavaScript -->
+            <input type="checkbox" name="chk_js" id="chk_js">
+            <label for="chk_js">JS</label><br>
+            <!-- Estados -->
+            <label for="slt_uf">Estados:</label><br>
+            <select required name="slt_uf" id="slt_uf">
+                <option value="">Selecione...</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select><br>
+            <!-- Observacao -->
+            <label for="txt_observacao">Observação:</label><br>
+            <textarea name="txt_observacao" id="txt_observacao" cols="30" rows="10"></textarea><br>
+            <!-- Enviar e Apagar -->
+            <button id="btn_enviar" name="btn_enviar" type="submit">Enviar</button>
+            <button id="btn_apagar" name="btn_apagar" type="submit">Apagar</button>
+
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
