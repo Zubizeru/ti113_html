@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+</head>
+
+<body>
+    <!-- Dados Pessoais -->
+    <form action="" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <table>
+                <!-- Nome -->
+                <tr>
+                    <td><label for="txt_nome">Nome:</label></td>
+                    <td><input required type="text" name="txt_nome" id="txt_nome"></td>
+                    <!-- Sobrenome -->
+                    <td><label for="txt_sobrenome">Sobrenome:</label></td>
+                    <td><input required type="text" name="txt_sobrenome" id="txt_sobrenome"></td>
+                </tr>
+                <!-- Data de Nascimento -->
+                <tr>
+                    <td><label for="txt_nascimento">Nascimento:</label></td>
+                    <td>
+                        <input placeholder="dd" size="2px" type="text" name="txt_nascimento-dia"
+                            id="txt_nascimento-dia">
+                        <input placeholder="mm" size="2px" type="text" name="txt_nascimento-mes"
+                            id="txt_nascimento-mes">
+                        <input placeholder="yyyy" size="4px" type="text" name="txt_nascimento-ano"
+                            id="txt_nascimento-ano">
+                    </td>
+                </tr>
+                <!-- RG -->
+                <tr>
+                    <td><label for="txt_rg">RG:</label></td>
+                    <td><input type="text" name="txt_rg" id="txt_rg"></td>
+                </tr>
+                <!-- CPF -->
+                <tr>
+                    <td><label for="txt_cpf">CPF:</label></td>
+                    <td>
+                        <input size="9px" type="text" name="txt_cpf" id="txt_cpf">
+                        <label for="txt_cpf">-</label>
+                        <input size="4px" type="text" name="txt_cpf2" id="txt_cpf2">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+
+    <!-- Dados de Endereço -->
+    <form action="" method="get">
+        <fieldset>
+            <legend>Dados de Endereço</legend>
+            <table>
+                <!-- Rua -->
+                <tr>
+                    <td><label for="txt_rua">Rua:</label></td>
+                    <td><input type="text" name="txt_rua" id="txt_rua"></td>
+                </tr>
+                <!-- Número -->
+                <tr>
+                    <td><label for="txt_numero">Número:</label></td>
+                    <td><input type="number" name="txt_numero" id="txt_numero"></td>
+                </tr>
+                <!-- Bairro -->
+                <tr>
+                    <td><label for="txt_bairro">Bairro:</label></td>
+                    <td><input type="text" name="txt_bairro" id="txt_bairro"></td>
+                </tr>
+                <!-- Estado -->
+                <tr>
+                    <td><label for="slt_uf">Estado:</label></td>
+                    <td>
+                        <select required name="slt_uf" id="slt_uf">
+                            <option value="">Selecione...</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- Cidade -->
+                <tr>
+                    <td><label for="txt_cidade">Cidade:</label></td>
+                    <td><input type="text" name="txt_cidade" id="txt_cidade"></td>
+                </tr>
+                <!-- CEP -->
+                <tr>
+                    <td><label for="txt_cep">CEP:</label></td>
+                    <td>
+                        <input size="5px" type="text" name="txt_cep1" id="txt_cep1">
+                        <label for="txt_cep">-</label>
+                        <input size="3px" type="text" name="txt_cep2" id="txt_cep2">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <!-- Dados de Login -->
+    <form action="" method="get">
+        <fieldset>
+            <legend>Dados de Login</legend>
+            <table>
+                <!-- Email -->
+                <tr>
+                    <td><label for="txt_email">Email:</label></td>
+                    <td><input type="email" name="txt_email" id="txt_email"></td>
+                </tr>
+                <!-- Imagem de Perfil -->
+                <tr>
+                    <td><label for="txt_imagem">Imagem de Perfil:</label></td>
+                    <td><input type="file" name="fil_imagemperfil" id="fil_imagemperfil"></td>
+                </tr>
+                <!-- Login de Usuário -->
+                <tr>
+                    <td><label for="txt_login">Login de usuário:</label></td>
+                    <td><input type="text" name="txt_login" id="txt_login"></td>
+                </tr>
+                <!-- Senha -->
+                <tr>
+                    <td><label for="txt_cep">Senha:</label></td>
+                    <td><input type="password" name="txt_senha" id="txt_senha"></td>
+                </tr>
+                <!-- Confirme a Senha -->
+                <tr>
+                    <td><label for="txt_cep">Confirme a senha:</label></td>
+                    <td><input type="password" name="txt_confirmsenha" id="txt_confirmsenha"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
