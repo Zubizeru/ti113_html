@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Site</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1 -->
+        <section>
+            <h2>Sobre Nós</h2>
+            <p>Somos uma empresa dedicada à inovação e qualidade.</p>
+        </section>
+
+        <!-- Section 2: Formulário com tabela -->
+        <section>
+            <h2>Envie Seus Dados</h2>
+            <form action="/enviar" method="post">
+                <table style="border:1px solid black">
+                    <tr>
+                        <td><label for="nome">Nome:</label></td>
+                        <td><input type="text" id="nome" name="nome" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="idade">Idade:</label></td>
+                        <td><input type="number" id="idade" name="idade"></td>
+                    </tr>
+                    <tr>
+                        <td>Receber notícias:</td>
+                        <td><input type="checkbox" name="noticias"></td>
+                    </tr>
+                    <tr>
+                        <td>Participar de promoções:</td>
+                        <td><input type="checkbox" name="promocoes"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="submit">Enviar</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+        <!-- Section 3: Figura com legenda -->
+        <section>
+            <h2>Imagem de Destaque</h2>
+            <figure>
+                <img src="imagem-exemplo.jpg" alt="Descrição da imagem">
+                <figcaption>Legenda: Esta é uma imagem de exemplo.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
