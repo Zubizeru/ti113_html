@@ -43,6 +43,7 @@ nav {
 main {
     padding-left: 200px;
     padding-right: 200px;
+    padding-top: 40px;
 }
 
 h1 {
@@ -50,10 +51,11 @@ h1 {
     color: #7e7d7a;
 }
 
-tr {
-    padding: 50px;
-}
-
 #justoaugue {
     background-color: #464646;
 }
+
+#laranja {
+    color: #e6ae58 ;
+}
+
