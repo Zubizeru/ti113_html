@@ -10,25 +10,26 @@
 
 <body>
     <header>
-        <table border="1" width="100%">
+        <table width="100%">
             <tr>
                 <td>
-                    <h2>Basic 90</h2>
+                    <h2 id="titulo">Basic 90</h2>
                     <p>Free HTML5 Website Template</p>
                 </td>
                 <td align="right">
-                    <input placeholder="Search Our Website" type="search" name="searchweb" id="searchweb">
-                    <button type="submit">SUBMIT</button>
+                    <input class="search" placeholder="Search Our Website" type="search" name="searchweb"
+                        id="searchweb">
+                    <button class="searchbutton" type="submit">SUBMIT</button>
                 </td>
             </tr>
         </table>
         <nav>
-            <ul class="menu hidden" id="menu">
-                <li>TEXT LINK</li>
-                <li>TEXT LINK</li>
-                <li>TEXT LINK</li>
-                <li>TEXT LINK</li>
-                <li>TEXT LINK</li>
+            <ul class="menu">
+                <li><a class="headerlink" href="">TEXT LINK</a></li>
+                <li><a class="headerlink" href="">TEXT LINK</a></li>
+                <li><a class="headerlink" href="">TEXT LINK</a></li>
+                <li><a class="headerlink" href="">TEXT LINK</a></li>
+                <li><a class="headerlink" href="">TEXT LINK</a></li>
             </ul>
         </nav>
     </header>
@@ -36,13 +37,18 @@
         <table id="justoaugue" width="100%">
             <tr>
                 <td>
-                    <h1>Eu justo augue estas</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Similique perferendis atque et vitae enim qui unde,
-                        corrupti libero laborum? Aspernatur in repellat
-                        reprehenderit commodi quo?
-                        Quaerat consectetur quam voluptates quidem?</p> 
-                        <p id="laranja" align="right">Read More > </p><br>
+                    <div class="coluna1">
+                        <h1>Eu justo augue estas</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Similique perferendis atque et vitae enim qui unde,
+                            corrupti libero laborum? Aspernatur in repellat
+                            reprehenderit commodi quo?
+                            Quaerat consectetur quam voluptates quidem? Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Amet dicta nulla sapiente inventore facere facilis consectetur, reiciendis
+                            illo esse suscipit distinctio quam! Ut, mollitia. Consequuntur dolores excepturi veniam
+                            nulla blanditiis.</p><br><br>
+                        <p align="right"><a id="laranja" href="">Read More ></a></p><br>
+                    </div>
                 </td>
                 <td rowspan="2">
                     <img width="1000" height="100%" src="Imagem/exercicio05_imagem1.png" alt="">
@@ -50,28 +56,89 @@
             </tr>
             <tr>
             </tr>
-        </table><br>
-        <table>
+        </table>
+        <table class="tabela2"><br><br>
             <tr>
-                <td>
+                <td class="alinharvertical">
                     <h2>Eu justo augue estas</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Similique perferendis atque et vitae enim qui unde,
+                        <span id="laranja">Similique</span> perferendis atque et vitae enim qui unde,
                         corrupti libero laborum? Aspernatur in repellat
                         reprehenderit commodi quo?
-                        Quaerat consectetur quam voluptates quidem?</p> <br>
+                        Quaerat consectetur quam voluptates <span id="laranja">quidem?</span>
+                    </p><br>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem dolore animi ipsa nulla
+                        distinctio voluptatibus alias officia ad. Optio molestiae earum illo hic similique totam sed
+                        beatae saepe <span id="laranja">dignissimos</span> sunt!
+                    </p> <br>
                 </td>
-                <td align="center"  width="900px">
-                    <img width="130" height="130" src="Imagem/exercicio05_imagem1.png" alt="">
-                    <img width="130" height="130" src="Imagem/exercicio05_imagem1.png" alt="">
-                    <img width="130" height="130" src="Imagem/exercicio05_imagem1.png" alt=""><br>
-                    <p align="center" id="laranja">VIEW OUR IMAGE GALLERY HERE></p>
+                <div>
+                    <td align="right" width="45%">
+                        <div class="displayimagem">
+                            <img class="imgpequenaleft" src="Imagem/imgpequena.png" alt="">
+                            <img class="imgpequena" src="Imagem/imgpequena.png" alt="">
+                            <img class="imgpequena" src="Imagem/imgpequena.png" alt="">
+                        </div><br>
+                        <p align="center"><a id="laranja" href="">VIEW OUR IMAGE GALLERY HERE</a></p>
+                </div>
                 </td>
             </tr>
-        </table> 
-        <hr/>
+        </table>
+        <hr />
     </main>
-
+    <section>
+        <table width="100%">
+            <tr>
+                <td class="sectionpadding" width="27.5%">
+                    <h3>FROM THE BLOG</h3>
+                    <h4>Post Title</h4>
+                    <h6><span id="laranja">Admin</span>, domainname.com</h6><br>
+                    <h5>Friday 6<sup>th</sup> April 2000</h5><br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Illum facilis itaque, animi earum est incidunt ad modi in
+                        facere laudantium unde quam omnis eius provident,
+                        repellendus amet reprehenderit. Excepturi, temporibus.</p><br>
+                    <h4 align="left"><a id="laranja" href="">Read More ></a></h4>
+                </td>
+                <td class="sectionpadding" width="27.5%">
+                    <h3>QUICK LINKS</h3>
+                    <p>> <a id="laranja" href="">Lorem ipsum dolor</a></p><br>
+                    <hr />
+                    <p>> <a id="laranja" href="">Lorem ipsum dolor</a></p><br>
+                    <hr />
+                    <p>> <a id="laranja" href="">Lorem ipsum dolor</a></p><br>
+                    <hr />
+                    <p>> <a id="laranja" href="">Lorem ipsum dolor</a></p><br>
+                    <hr />
+                    <p>> <a id="laranja" href="">Lorem ipsum dolor</a></p><br>
+                    <hr />
+                </td>
+                <td class="sectionpadding_about" width="45%">
+                    <h3>ABOUT US</h3>
+                    <div class="about_us">
+                        <div>
+                            <img class="imgpequenasection" src="Imagem/imgpequena.png" alt="">
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus earum,
+                                cupiditate
+                                alias officiis quod vero corrupti dolore error magnam placeat, doloremque sequi enim.
+                                Facere
+                                tenetur dolorum rem voluptate quo? Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Sed magni repellat earum adipisci ab sequi magnam quo impedit nam pariatur non
+                                provident beatae nobis ea, quidem cupiditate culpa autem minima?</p><br><br>
+                            <p align="right"><a id="laranja" href="">Read More ></a></p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <footer align="left" class="footer">
+        <p>Copyright &copy; 2012 - All Rights Reserved - Domain Name.</p>
+        <p>Template by OS Templates</p>
+    </footer>
 </body>
 
 </html>
